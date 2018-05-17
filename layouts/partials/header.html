@@ -1,58 +1,29 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="renderer" content="webkit">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Title -->
-  <title>
-    {{- if not .IsHome }}
-    {{- if eq .Kind "page" }}{{ .Title }}
-    {{- else if eq .Data.Singular "tag" }}{{ .Data.Term }}
-    {{- else }}Posts
-    {{- end }} - {{ end }}
-    {{- .Site.Title -}}
-  </title>
-  <!-- Meta -->
-  {{- if eq .Kind "page" }}
-  <meta name="description" content="{{ .Summary }}">
-  <meta name="author" content="{{ .Params.author | default .Site.Params.author }}">
-  {{ else }}
-  <meta name="description" content="{{ .Site.Params.description }}">
-  <meta name="author" content="{{ .Site.Params.author }}">
-  {{ end -}}
-  <!-- Styles -->
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
-  <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
-  <link href="/css/style.css" rel="stylesheet">
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-  <link rel="icon" href="/img/favicon.ico">
-  <!-- Generator -->
-  <meta name="generator" content="Hugo {{ .Hugo.Version }}">
-  <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" href="/index.xml" title="{{ .Site.Title }}">
-</head>
-<body class="{{if eq .Kind `page` }}single{{else}}list{{end}}">
-  <div id="background_grid" class="background-grid" width="100%" height="100%"></div>
+<div class="background-grid"></div>
+<div id="title-info" class="title-info">
+  <div id='site-title' class='site-title'>
+    {{ if ( ne .Site.Title "" ) }}
+    <a href="{{ .Site.BaseURL | relLangURL }}"> {{ .Site.Title }} </a>
+    {{ end }}</div>
+  </div>
+  <button id="toggle-navigation" class="toggle-navigation">
+    <i class="fa fa-bars"></i>
+  </button>
 
-  <header class="header">
-    {{ if .IsHome }}
-    <h1 class="title"><a href="{{ `/` }}"><span>&rarr;</span>{{ .Site.Title }}</a></h1>
-    {{ else }}
-    <p class="title"><a href="{{ `/` }}"><span>&rarr;</span>{{ .Site.Title }}</a></p>
+  <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+  <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+    {{ with .Site.Params.Slogan }}
+    <p class="site-description">{{ . | default "" | safeHTML }}</p>
     {{ end }}
-    <button class="menu-toggle" type="button"></button>
-    <nav class="menu">
-      <ul>
-        {{ $currentPage := . }}
+
+    <div class="menu">
+      <ul id="menu-primary-items" class="menu-primary-items">
+        {{ $page := . }}
         {{ range .Site.Menus.main }}
-        <li class="{{ if $currentPage.IsMenuCurrent `main` . }}active{{ end }}">
-          <a href="{{ .URL }}">{{ .Name }}</a>
+        <li id="menu-item" class='menu-item {{ if eq ("/") (.URL) }}menu-item-type-custom menu-item-object-custom{{ else }}menu-item-type-post_type menu-item-object-page{{ end }} {{ if $page.IsMenuCurrent "main" . }}current-menu-item current_page_item{{ end }}'>
+          <a href="{{ .URL | absURL }}">{{ .Name }}</a>
         </li>
         {{ end }}
       </ul>
-    </nav>
-  </header>
-  <main class="main">
+    </div>
+
+  </div>

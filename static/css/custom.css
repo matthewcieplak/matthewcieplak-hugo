@@ -1,0 +1,65 @@
+
+
+/*CUSTOMIZATION*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  font: Arial, Helvetica, sans-serif;
+  /*background-color: #ccc;*/
+}
+
+.background-grid{
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  min-height: 100%;
+  opacity: 0.8;
+}
+
+#site-header{
+  background: rgba(0,0,0,0.2);
+}
+
+.header, .main, .footer{
+  z-index: 2;
+  position: relative;
+}
+
+.main{
+  /*color: #fff;*/
+  background: transparent;
+}
+
+.background-grid__row{
+  clear: both;
+}
+
+.background-grid__grid-square{
+  min-width: 10%;
+  min-height: 10%;
+  position: relative;
+  display: block;
+  float: left;
+  opacity: 0.8;
+  transition: all 0.5s linear;
+}
+
+.clear{
+  clear: both;
+}
+
+#body{
+  position: relative;
+  z-index: 2;
+}
+
+.featured-image{
+  max-height: 400px;
+}
+
+.entry, .comments{
+  max-width: 970px;

@@ -7,17 +7,26 @@ InstantClick.on('change', function() {
     Math.round(Math.random() * 7)
   ]
 
-  drawSquares(parent, color_origin);
+  window.drawn = false;
+  drawSquares(color_origin);
+  window.addEventListener('resize', function(){
+    var parent = document.getElementById('background_grid');
+    while (parent.firstChild) {
+      parent.removeChild(parent.firstChild);
+    }
+    drawSquares(color_origin);
+  }, false);
 });
 
 
-function drawSquares(ctx, color_origin){
+
+function drawSquares(color_origin){
   num_squares = 10;
   var colors_range = [
-      '8', '9', 'a', 'b', 'c', 'd', 'e', 'd', 'c', 'b', 'a', '9', '8', '7', '6'
+      '8', '9', 'a', 'b', 'c', 'd', 'e', 'd', 'c', 'b', 'a', '9', '8', '7', '6', '4'
   ];
   var colors_range = [
-      '80', '88', '90', '98', 'a0', 'a8', 'b0', 'a8', 'a0', '98', '90', '88', '80', '78', '70'
+      '80', '88', '90', '98', 'a0', 'a8', 'b0', 'a8', 'a0', '98', '90', '88', '80', '78', '70', '68', '60'
   ];
   // var colors_range = [
   //     '1', '2', '3', '4', '5', '6', '7', '8', '7', '6', '5', '4', '3', '2', '1'
@@ -26,10 +35,11 @@ function drawSquares(ctx, color_origin){
   var width = window.innerWidth;
   var height = window.innerHeight;
   var squareWidth = Math.round(width / num_squares);
-  var drawn = false;
+  //var drawn = false;
   //var parent = document.getElementById('background_grid');
 
   var parent = document.getElementById('background_grid');
+  parent.style.backgroundColor = '#' + colors_range[color_origin[0]] + colors_range[color_origin[1]] + colors_range[color_origin[2]];
 
   //if (drawn) return;
   for (var i = 0; i < num_squares; i++) {
@@ -55,15 +65,18 @@ function drawSquares(ctx, color_origin){
         div.className += ' clear';
       }
       div.style.backgroundColor = color_square;
-      div.style.opacity = 0; 
+      if (!drawn) {
+        div.style.opacity = 0; 
+      }
       row.appendChild(div);
       //div.style.opacity = ((num_squares - i) / num_squares);
       div.width = squareWidth * 2;// = 
     }
     
   }
-  drawn = true;
-  setTimeout(animateSquares, 100);
+  if (!drawn) setTimeout(animateSquares, 100);
+  window.drawn = true;
+  
 }
 
 function animateSquares(){
