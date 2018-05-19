@@ -10,7 +10,7 @@ InstantClick.on('change', function() {
   window.drawn = false;
   drawSquares(color_origin);
   window.addEventListener('resize', function(){
-    var parent = document.getElementById('background_grid');
+    var parent = document.getElementById('background-grid');
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
     }
@@ -38,7 +38,7 @@ function drawSquares(color_origin){
   //var drawn = false;
   //var parent = document.getElementById('background_grid');
 
-  var parent = document.getElementById('background_grid');
+  var parent = document.getElementById('background-grid');
   parent.style.backgroundColor = '#' + colors_range[color_origin[0]] + colors_range[color_origin[1]] + colors_range[color_origin[2]];
 
   //if (drawn) return;
@@ -80,7 +80,7 @@ function drawSquares(color_origin){
 }
 
 function animateSquares(){
-  var parent = document.getElementById('background_grid');
+  var parent = document.getElementById('background-grid');
   var rows = parent.childNodes;
   for (var i = 0; i < rows.length; i++) {
     var squares = rows[i].childNodes;

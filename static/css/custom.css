@@ -63,3 +63,44 @@ body{
 
 .entry, .comments{
   max-width: 970px;
+}
+
+
+p img{
+  max-width: 100%;
+}
+
+p a img{
+  border: 2px solid rgba(0,0,0,0,.2);
+}
+
+p a img:hover{
+  border-color: rgba(0,0,0,0.5);
+}
+
+img[src$='#thumbnail'] { 
+  float:left;
+  margin: 0 25px 15px 0;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+.cv_menu{
+  text-align: center;
+}
+.cv_menu a{
+  text-decoration: none;
+}
+.cv_menu a:hover{
+  text-decoration: underline;
+}
+
+.archive-header{
+  color: #eee;
+}
+
+p iframe{
+  margin-top: 15px;
+}

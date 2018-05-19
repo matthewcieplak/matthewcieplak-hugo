@@ -1,9 +1,9 @@
 +++
 showonlyimage = true
-draft = false
-image = "img/studio-strato.jpg"
-date = "2016-11-05T18:25:22+05:30"
-title = "Paper"
+draft = true
+image = "img/projects/extralife.jpg"
+date = "2017-12-05T18:25:22+05:30"
+title = "EXAMPLE"
 weight = 0
 categories = ["Blog"]
 +++

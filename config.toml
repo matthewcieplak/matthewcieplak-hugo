@@ -44,14 +44,14 @@ paginate = 4 #frontpage pagination
   weight = 1
 
   [[menu.main]]
-  name = "About"
-  url = "about/"
-  weight = 2
+  name = "Curriculum Vitae"
+  url = "cv/"
+  weight = 3
 
   [[menu.main]]
-  name = "Get in touch"
-  url = "contact/"
-  weight = 3
+  name = "Contact"
+  url = "mailto:matthew.cieplak@gmail.com"
+  weight = 4
 
   [params.social]
   #facebook      = "full profile url in facebook"

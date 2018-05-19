@@ -63,20 +63,20 @@
     </p>
   </nav>-->
 
-  <div class="entry-categories"><p><span>Categories</span>
+  <!--div class="entry-categories"><p><span>Categories</span>
     {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
     <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" title="View all posts in {{ $name }}">{{ $name }}</a>{{ end }}
-  </p>
-</div>
+  </div-->
 
 
 
-<div class="entry-tags"><p><span>Tags</span>
+<!--div class="entry-tags"><p><span>Tags</span>
   {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
   <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="View all posts tagged {{ $name }}">{{ $name }}</a>
   {{ end }}
 
-</p></div>	</div>
+</div-->	
+</div>
 {{ if and (isset .Site.Params "author") .Site.Params.author }}
 <div class="author-meta">
 
