@@ -21,6 +21,7 @@ categories: []
 [![8tracks](/img/sites/8tracks-thumb.png#thumbnail)](/img/sites/8tracks.jpg)
 8tracks is a social playlist sharing site, where users can share and listen to mixes of their favorite music. Often compared to the original Muxtape, 8tracks is actually 100% legal, broadcasting under an internet radio license instead of the onerous on-demand type licensing used by competitors. It also links up with users' favorite web 2.0 services, like Twitter, Tumblr, and Last.fm. With a network of over 20,000 DJs and hundreds of thousands of listeners, 8tracks is one of the few digital music sites positioned to succeed in the volatile music industry. I do principal frontend development along with an excellent <a href="http://8tracks.com/team">team</a>. Ruby on Rails/MySQL. (2008-present)
 
+
 # [muxcloud](http://muxcloud.matthewcieplak.com/)
 
 [![muxcloud](/img/sites/muxcloud-thumb.png#thumbnail)](/img/sites/muxcloud.jpg)
@@ -73,7 +74,7 @@ Narragansett Beer is a classic New England brew with a long history. Based in Pr
 
 A brand-new independent record label based in Brooklyn, NY, Lost In Records uses a custom-built CMS designed for ease of use and flexibility. The blog and record inventory system make it easy to add streaming audio to records or newsposts. Ruby on Rails/MySQL. (2008)-->
 
-### [UCLA Global Health Forum](http://www.uclaghf.com/)
+# UCLA Global Health Forum
 
 [![UCLA Global Health Forum](/img/sites/ucla-thumb.png#thumbnail)](/img/sites/ucla.jpg) 
 
@@ -83,5 +84,5 @@ The Global Health Forum website is designed to allow various student organizatio
 
 [![Selfportrait.net](/img/sites/selfportrait-thumb.png#thumbnail)](/img/sites/selfportrait.jpg)
 
-Selfportrait is a social networking site for artists. I upgraded their systems by building more powerful administrative tools, standardizing the design, implementing CSS, and completing development on an e-commerce system which lets users sell their art from their profile using Paypal. PHP/MySQL.  
+Selfportrait was a social networking site for artists. I upgraded their systems by building more powerful administrative tools, standardizing the design, implementing CSS, and completing development on an e-commerce system which lets users sell their art from their profile using Paypal. PHP/MySQL.  
 (2007-2008)
