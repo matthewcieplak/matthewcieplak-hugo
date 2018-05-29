@@ -1,8 +1,8 @@
 +++
 showonlyimage = true
 draft = true
-image = "img/projects/extralife.jpg"
-date = "2017-12-05T18:25:22+05:30"
+image = "img/photos/eclipse-3color-gamma.jpg"
+date = "2017-08-21T18:25:22+05:30"
 title = "EXAMPLE"
 weight = 0
 categories = ["Blog"]
@@ -11,22 +11,19 @@ categories = ["Blog"]
 Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 <!--more-->
 
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+<div class='pixels-photo'>
+  <p>
+    <img src='https://drscdn.500px.org/photo/233308385/m%3D900/v2?user_id=21158701&webp=true&sig=6b0dd9946958299d77e041303bb4e9720d2b707561235cd9eafb3696b2eb31ae' alt='Three-color HDR Eclipse (four exposures) by Matthew Cieplak on 500px.com'>
+  </p>
+  <a href='https://500px.com/photo/233308385/three-color-hdr-eclipse-four-exposures-by-matthew-cieplak' alt='Three-color HDR Eclipse (four exposures) by Matthew Cieplak on 500px.com'></a>
+</div>
+<script type='text/javascript' src='https://500px.com/embed.js'></script>
 
-A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
 
-1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-2. Aliquam tincidunt mauris eu risus.
-
-> The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
-
-## Header Level 2
-
-Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-
-The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
-
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Aliquam tincidunt mauris eu risus.
-
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then  
+<div class='pixels-photo'>
+  <p>
+    <img src='https://drscdn.500px.org/photo/233308155/m%3D900/v2?user_id=21158701&webp=true&sig=22a9b3b892361dc93ad26e904c7f73f6d7c192211e9574b7f02ff0142fbf40b6' alt='Solar Prominences by Matthew Cieplak on 500px.com'>
+  </p>
+  <a href='https://500px.com/photo/233308155/solar-prominences-by-matthew-cieplak' alt='Solar Prominences by Matthew Cieplak on 500px.com'></a>
+</div>
+<script type='text/javascript' src='https://500px.com/embed.js'></script>

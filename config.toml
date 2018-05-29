@@ -7,7 +7,7 @@ disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 preserveTaxonomyNames = true
-paginate = 4 #frontpage pagination
+paginate = 6 #frontpage pagination
 
 [params]
   slogan = "Internet impresario"
@@ -56,6 +56,7 @@ paginate = 4 #frontpage pagination
   [params.social]
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
+  soundcloud    = "https://soundcloud.com/extralifedisco"
   email         = "matthew.cieplak@gmail.com"
   twitter       = "http://twitter.com/datadebt"
   #linkedin      = "full profile url in linkedin"
