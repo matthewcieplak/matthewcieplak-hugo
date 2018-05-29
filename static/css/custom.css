@@ -57,7 +57,7 @@ body{
   z-index: 2;
 }
 
-.featured-image{
+.entry .featured-image{
   max-height: 400px;
 }
 
@@ -103,4 +103,8 @@ img[src$='#thumbnail'] {
 
 p iframe{
   margin-top: 15px;
+}
+
+.pagination a:link, .pagination a:visited{
+  color: #fff;
 }
