@@ -1,6 +1,6 @@
 +++
 showonlyimage = true
-draft = true
+draft = false
 image = "img/sites/muxcloud-crop.jpg"
 date = "2016-05-02T18:25:22+05:30"
 title = "Muxcloud"

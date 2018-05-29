@@ -1,6 +1,6 @@
 +++
 showonlyimage = true
-draft = true
+draft = false
 image = "img/projects/xylobox.jpg"
 date = "2016-03-02T18:25:22+05:30"
 title = "Xylobox"

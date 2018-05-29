@@ -1,6 +1,6 @@
 +++
 showonlyimage = true
-draft = true
+draft = false
 image = "img/photos/eclipse-3color-gamma.jpg"
 date = "2017-08-21T18:25:22+05:30"
 title = "Total Solar Eclipse"

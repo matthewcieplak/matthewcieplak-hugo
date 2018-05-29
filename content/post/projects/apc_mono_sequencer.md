@@ -1,6 +1,6 @@
 +++
 showonlyimage = true
-draft = true
+draft = false
 image = "img/projects/apc_mono_sequencer2.jpg"
 date = "2015-04-19T18:25:22+05:30"
 title = "APC Mono Sequencer"

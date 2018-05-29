@@ -1,6 +1,6 @@
 +++
 showonlyimage = true
-draft = true
+draft = false
 image = "img/projects/supersixteen-crop.jpg"
 date = "2018-05-27T18:25:22+05:30"
 title = "Super Sixteen"
