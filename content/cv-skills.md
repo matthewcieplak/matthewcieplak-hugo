@@ -16,12 +16,32 @@ categories: []
 
 ---
 
- I have experience in designing applications, user interfaces, and databases. I can develop on Unix or Windows servers. I can set up domains, hosting, and databases. I am not a graphic designer. I can make designs into XHTML/CSS templates. I build secure applications. I am capable with the following tools:
+Most of my software experience has been in the world of web development. While I have always been an engineer, I have been responsible for leadership of many projects and teams, often taking on multiple roles. My primary software skills are:
 
- * Ruby on Rails</li>
- * PHP</li>
- * ASP/ASP.NET</li>
- * XHTML/CSS</li>
- * Javascript/jQuery/AJAX</li>
- * MySQL/MSSQL</li>
-          
+ * Product and information architecture
+ * Frontend development
+ * Backend engineering
+ * User experience design
+
+I love working closely with designers and product managers to improve interfaces and create beautiful, standards-compliant, smooth-running software that exceeds' users expectations. The languages and tools I've used the most are:
+
+ * Javascript (with Backbone & React)
+ * Ruby (on Rails)
+ * Python
+ * Go
+ * PHP
+ * C++ (mostly on microcontrollers)
+
+Of course, no web developer would be worth much without a deep knowledge and understanding of HTML, CSS, and other markup languages (I prefer to use SCSS). Along with those language fundamentals, I've also done a lot of server-side development and operations work, building projects with and making extensive use of these tools and platforms:
+
+ * Amazon Web Services (EC2, RDS, S3, and Redshift)
+ * MySQL, Postgres, & Redis
+ * Hugo SSG (for this web site!)
+ * Wordpress
+ * Algolia
+ * Varnish
+ * Graphite, Grafana, and STATSD
+ * Chef
+
+ With web development I've spent a lot of time in working in particular with *audio libraries*, *advertising toolkits* and servers, and developing custom integrations through *external APIs*.
+

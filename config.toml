@@ -3,17 +3,17 @@ title = "Matthew Cieplak"
 theme = "hugo-nederburg-theme"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "matthewcieplak"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-59205527-2"
 preserveTaxonomyNames = true
 paginate = 6 #frontpage pagination
 
 [params]
   slogan = "Internet impresario"
-  description = "Describe your website" # meta description
+  description = "Web development, DIY electronics, and funky disco music." # meta description
   #author = "Göran Svensson"
-  authorLink = "https://appernetic.io/"
+  #authorLink = "https://appernetic.io/"
   bio = [
     "Göran is an avid blogger and the founder of <a href='https://appernetic.io/'>Appernetic.io</a>. This is the author bio shown after posts."
   ]

@@ -1,1 +1,5 @@
+#AWS s3 CLI version
 aws s3 sync --acl "public-read" --sse "AES256" public/ s3://matthewcieplak.com --exclude 'post' --exclude 'img/*'
+
+#s3deploy version
+s3deploy -bucket matthewcieplak.com -region us-east-1 -source public/

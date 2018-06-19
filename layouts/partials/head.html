@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{{ partial "schema" . }}
+
+{{ with .Title }} <title>{{ . }} {{if $.IsHome}}- {{ $.Site.Params.slogan | default "" | safeHTML }}{{ end }}</title>
+{{ end }}
+
+{{ if .Description }}<meta name="description" content="{{ .Description }}" />
+{{ else }}<meta name="description" content="{{ .Site.Params.description }}" />
+{{ end }}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" id="ct-tracks-google-fonts-css" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C700&amp;subset=latin%2Clatin-ext&amp;ver=4.7.2" type="text/css" media="all">
+<link rel="stylesheet" href="{{ "css/font-awesome.min.css" | absURL }}" type='text/css' media='all'>
+<!-- Theme stylesheet, if possible do not edit this stylesheet -->
+<link href="{{ "css/style.css" | absURL }}" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
+<!-- Custom stylesheet - for your changes -->
+<link href="{{ "css/custom.css" | absURL }}" rel="stylesheet" type='text/css' media='all'>
+<link rel="shortcut icon" href="{{ "img/favicon.ico" | absURL }}" type="image/x-icon">
+<link rel="icon" href="{{ "img/favicon.ico" | absURL }}" type="image/x-icon">
+{{ if .RSSLink }}
+<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title | default "" }}" />
+<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title | default "" }}" />
+{{ end }}
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@datadebt" />
+<meta name="twitter:creator" content="@datadebt" />
+<meta property="og:url" content="{{.Permalink}}"/>
+<meta property="og:title" content="{{.Title}}" />
+<meta property="og:description" content="{{.Summary}}" />
+
+{{ if and (isset .Params "image")}}
+  <meta property="og:image" content="{{ printf "%s%s" .Site.BaseURL .Page.Params.image }}" />
+{{ else }}
+  <meta property="og:image" content="{{.Site.BaseURL}}img/portrait/portrait-2017.jpg" />
+{{ end }}
+
+{{ if $.IsHome }}
+  <meta property="og:type" content="website" />
+{{ else if $.IsPage }}
+  <meta property="og:type" content="article" />
+{{ end }}
+
+
+{{ template "_internal/google_analytics_async.html" . }}

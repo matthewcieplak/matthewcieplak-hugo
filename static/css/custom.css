@@ -108,3 +108,28 @@ p iframe{
 .pagination a:link, .pagination a:visited{
   color: #fff;
 }
+
+.homepage-content{
+  background: rgba(255,255,255,0.5);
+  margin: 20px auto;
+  padding: 20px 50px;
+  font-size: 1.2em;
+  min-height: 200px;
+}
+
+.homepage-content img{ 
+  float: left;
+  margin: -20px 40px 0 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+
+#disqus_thread{
+  padding: 0;
+}
+
+.comments{
+  max-width: 970px;
+  padding: 0;
+}
