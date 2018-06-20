@@ -16,8 +16,9 @@ body{
   position: fixed;
   z-index: 0;
   width: 100%;
-  min-height: 100%;
+  min-height: 200%;
   opacity: 0.8;
+  min-width: 1000px;
 }
 
 #site-header{
@@ -36,16 +37,19 @@ body{
 
 .background-grid__row{
   clear: both;
+  overflow: hidden;
+  white-space: pre;
 }
 
 .background-grid__grid-square{
-  min-width: 10%;
-  min-height: 10%;
+  min-width: 100px;
+  min-height: 100px;
   position: relative;
   display: block;
   float: left;
   opacity: 0.8;
   transition: all 0.5s linear;
+  white-space: pre;
 }
 
 .clear{
@@ -118,11 +122,11 @@ p iframe{
 }
 
 .homepage-content img{ 
-  float: left;
-  margin: -20px 40px 0 0;
   width: 150px;
   height: 150px;
   border-radius: 100px;
+  margin: -20px auto 20px;
+  display: block;
 }
 
 #disqus_thread{
@@ -132,4 +136,11 @@ p iframe{
 .comments{
   max-width: 970px;
   padding: 0;
+}
+
+@media (min-width: 720px) {
+  .homepage-content img{ 
+    float: left;
+    margin: -20px 40px 0 0;
+  }
 }

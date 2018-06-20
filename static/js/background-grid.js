@@ -22,12 +22,16 @@ InstantClick.on('change', function() {
 
 function drawSquares(color_origin){
   num_squares = 10;
-  var colors_range = [
-      '8', '9', 'a', 'b', 'c', 'd', 'e', 'd', 'c', 'b', 'a', '9', '8', '7', '6', '4'
-  ];
-  var colors_range = [
+  num_rows = 20;
+  var colors_ranges = [
+    [
       '80', '88', '90', '98', 'a0', 'a8', 'b0', 'a8', 'a0', '98', '90', '88', '80', '78', '70', '68', '60'
+    ],
+    [
+      '90', '88', '80', '78', '70', '68', '60', '68', '70', '78', '80', '88', '90', '98', 'a0', 'a8', 'b0', 'a8', 'a0', '98'
+    ]
   ];
+  var colors_range = colors_ranges[Math.round(Math.random() * 1)];
   // var colors_range = [
   //     '1', '2', '3', '4', '5', '6', '7', '8', '7', '6', '5', '4', '3', '2', '1'
   // ];
@@ -39,12 +43,12 @@ function drawSquares(color_origin){
   //var parent = document.getElementById('background_grid');
 
   var parent = document.getElementById('background-grid');
-  parent.style.backgroundColor = '#' + colors_range[color_origin[0]] + colors_range[color_origin[1]] + colors_range[color_origin[2]];
+  parent.style.backgroundColor = '#' + colors_range[color_origin[0]] || '60' + colors_range[color_origin[1]] || '60' + colors_range[color_origin[2]] || '60';
 
   //if (drawn) return;
-  for (var i = 0; i < num_squares; i++) {
+  for (var i = 0; i < num_rows; i++) {
     var color_row = '#' +
-      colors_range[color_origin[0]+i];
+      colors_range[color_origin[0]+i] || '60';
 
     var row = document.createElement('div');
     row.className = 'background-grid__row';
@@ -53,8 +57,8 @@ function drawSquares(color_origin){
     for (var ii = 0; ii < num_squares; ii++) {
       var color_square = 
         color_row + 
-        colors_range[color_origin[1]+ii] + 
-        colors_range[color_origin[2]+i];
+        (colors_range[color_origin[1]+ii] || '50') + 
+        (colors_range[color_origin[2]+i] || '60');
       var div = document.createElement('DIV');
       div.style.width = 100.0 / num_squares + '%'; //squareWidth;
       div.style.height = squareWidth+'px';
@@ -85,7 +89,7 @@ function animateSquares(){
   for (var i = 0; i < rows.length; i++) {
     var squares = rows[i].childNodes;
     for (var ii = 0; ii < squares.length; ii++) {
-      squares[ii].style.opacity = ((num_squares - i) / (num_squares-2.0));
+      squares[ii].style.opacity = ((num_rows - i) / (num_rows-2.0));
     }
   }
 
