@@ -1,9 +1,9 @@
-baseurl = "http://matthewcieplak.com/"
+baseurl = "https://matthewcieplak.com/"
 title = "Matthew Cieplak"
 theme = "hugo-nederburg-theme"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
-disqusShortname = "matthewcieplak"
+# disqusShortname = "matthewcieplak"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = "UA-59205527-2"
 preserveTaxonomyNames = true
@@ -15,10 +15,10 @@ paginate = 6 #frontpage pagination
   #author = "Göran Svensson"
   #authorLink = "https://appernetic.io/"
   bio = [
-    "Göran is an avid blogger and the founder of <a href='https://appernetic.io/'>Appernetic.io</a>. This is the author bio shown after posts."
+    ""
   ]
   copyright = [
-    "&copy; 2018 Matthew Cieplak",
+    "&copy; 2022 Matthew Cieplak",
     "Based on Nederburg Hugo Theme by [Appernetic](https://appernetic.io)."
   ]
 
@@ -43,10 +43,10 @@ paginate = 6 #frontpage pagination
   url = "/"
   weight = 1
 
-  [[menu.main]]
-  name = "Curriculum Vitae"
-  url = "cv/"
-  weight = 3
+#  [[menu.main]]
+#  name = "Curriculum Vitae"
+#  url = "cv/"
+#  weight = 3
 
   [[menu.main]]
   name = "Contact"
@@ -58,9 +58,14 @@ paginate = 6 #frontpage pagination
   #googleplus    = "full profile url in googleplus"
   soundcloud    = "https://soundcloud.com/extralifedisco"
   email         = "matthew.cieplak@gmail.com"
-  twitter       = "http://twitter.com/datadebt"
+  twitter       = "http://twitter.com/extralifedisco"
   #linkedin      = "full profile url in linkedin"
   #stackoverflow = "full profile url in stackoverflow"
   instagram     = "http://instagram.com/extralifedisco"
   github        = "http://github.com/matthewcieplak"
   #pinterest     = "full profile url in pinterest"
+
+  [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

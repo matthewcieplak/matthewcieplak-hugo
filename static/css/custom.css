@@ -12,6 +12,11 @@ body{
   /*background-color: #ccc;*/
 }
 
+a:hover{
+  color: rgb(22,222,220);
+  /* border: 1px solid red; */
+}
+
 .background-grid{
   position: fixed;
   z-index: 0;
@@ -143,4 +148,49 @@ p iframe{
     float: left;
     margin: -20px 40px 0 0;
   }
+}
+
+.pixels-photo{
+  clear: both;
+  background: #eee;
+  padding-bottom: 1px;
+  font-style: italic;
+  text-align: center;
+  font-size: 13px;
+}
+
+.pixels-photo a{
+  text-decoration: none;
+}
+
+.pixels-photo a{
+  text-decoration: none;
+}
+
+.pixels-photo.right img,
+.pixels-photo.left img{
+  margin-top: -23px;
+}
+
+.pixels-photo.right{
+  float: right;
+  width: 40%;
+  clear: right;
+  margin: 20px 0 20px 20px;
+}
+
+.pixels-photo.left{
+  float: left;
+  width: 40%;
+  clear: left;
+  margin: 20px 20px 20px 0;
+}
+
+.pixels-photo.width_60{
+  width: 60%;
+}
+
+.pixels-photo.width_50{
+  width: 50%;
+  margin: 20px -5px;
 }

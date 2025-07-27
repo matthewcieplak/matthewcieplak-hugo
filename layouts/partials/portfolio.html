@@ -60,3 +60,15 @@
 			</div>
 			{{ end }}
 		</div>
+		{{ if gt $paginator.TotalPages 1 }}
+		<footer class="list-footer">
+		  <nav class="pagination">
+			{{ if $paginator.HasPrev }}
+			<a class="pagination-prev" href="{{ $paginator.Prev.URL }}">← Prev Page</a>
+			{{ end }}
+			{{ if $paginator.HasNext }}
+			<a class="pagination-next" href="{{ $paginator.Next.URL }}">Next Page →</a>
+			{{ end }}
+		  </nav>
+		</footer>
+		{{ end }}
