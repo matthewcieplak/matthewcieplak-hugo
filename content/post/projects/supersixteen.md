@@ -18,5 +18,7 @@ Super Sixteen is an open-source hardware sequencer for the Eurorack synthesizer 
 
 Check out part 1 of the construction series here, where I adapt the Arduino to Eurorack power supply and add a digital-to-analog converter for CV output.
 
+{{< rawhtml >}}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LfQ3woQ3Kn8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{{< /rawhtml >}}
 

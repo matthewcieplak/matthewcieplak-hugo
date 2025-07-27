@@ -13,7 +13,10 @@ Xylobox is an open-source wavetable synthesizer built on the Axoloti prototyping
 
 <!--more-->
 
+{{< rawhtml >}}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AzFoVb4wOyI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{{< /rawhtml >}}
+
 
 I documented my development and construction of the project as well as open-sourcing all of the designs and patches for the community to use. In addition to microcontroller programming, I learned a lot about practical electronics construction in the process.
 
